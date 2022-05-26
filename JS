@@ -1,0 +1,30 @@
+Aparecer o ocultar un div
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id='ocultar-y-mostrar'>CONTENIDO</div>
+
+    <button id='ocultar-mostrar'><i class="fas fa-bars"></i>ocultar/mostrar</button>
+
+    <script>
+        window.addEventListener('load', init, false);
+        function init() {
+            let div = document.querySelector('#ocultar-y-mostrar');
+            div.style.visibility = 'visible';
+            let boton = document.querySelector('#ocultar-mostrar');
+            boton.addEventListener('click', function (e) {
+                if(div.style.visibility === 'visible'){
+                    div.style.visibility = 'hidden';
+                }else{
+                    div.style.visibility = 'visible';
+                }
+            }, false);
+        }
+    </script>
+</body>
+</html>
