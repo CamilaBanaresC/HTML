@@ -1,0 +1,9 @@
+Gif de fondo que cubre toda la pantalla 
+
+body{
+	background-image: url("https://thumbs.gfycat.com/LikelyZestyAddax-size_restricted.gif");
+	background-attachment: fixed;
+	  background-attachment: fixed;
+ 	 background-position: center center;
+  		background-size: cover;
+}
