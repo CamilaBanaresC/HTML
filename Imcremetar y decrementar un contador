@@ -1,16 +1,37 @@
-<div id="botoness" >
-    <center>
-        <h1 id="counter-label">0</h1>
-    </center>
-</div>
-<center>
-    <div class="col-md-12">
-        <button id="click-diva">DEGRESE</button>
-        <button id="reset-button">RESETEAR</button>
-        <button id="click-div">INGRESE</button>
+<div id="contenedore">
+    <div id="contador" >
+        <center>
+            <h1 id="counter-label">0</h1>
+        </center>
     </div>
-</center>
+    <center>
+    <br>
+        <div class="col-md-12">
+            <button  class="btn btn-danger" id="click-diva"  >DEGRESE</button>
+            <button  class="btn btn-warning" id="reset-button">RESETEAR</button>
+            <button  class="btn btn-success" id="click-div">INGRESE</button>
+        </div>
+        </center>
+<div>
+
+
+
 <style>
+#contador{
+    border:solid;
+    margin-left:40%;
+    margin-right:40%;
+    margin-bottom:1%;
+}   
+ #contenedore{
+    border:solid;
+    padding-top:5%;
+    margin-left:20%;
+    margin-right:20%;
+    background-image: url("https://3.bp.blogspot.com/-Cv23B1q4Knw/V0DkOTFeO8I/AAAAAAAADgg/xGr2fNxVT70b10HAb6SEffJYqGKKY3PFQCLcB/s320/gif20.gif");
+  
+}
+
 </style>
 <script>
     window.onload = function () {
