@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<div class="container-fluid">
+		
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#largeShoes">
+Ingresar
+</button>
+
+<!-- The modal -->
+<div class="modal fade" id="largeShoes" tabindex="-1" role="dialog" aria-labelledby="modalLabelLarge" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+<h4 class="modal-title" id="modalLabelLarge">Modal Title</h4>
+</div>
+
+<div class="modal-body">
+<label for="usr">Por Favor ingrese su nombre:</label>
+<input  id="lbResultado" type="text" class="form-control">
+
+
+<button  onclick="myFunction()">Enviar</button>
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<script>
+function myFunction() {
+var dato = document.getElementById('lbResultado').value;
+console.log(dato);
+ alert("Bienvenid@ "  + dato);
+    
+}
+</script>
