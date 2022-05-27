@@ -1,0 +1,73 @@
+<div id="divchangecolor" >
+ <div id="divColor"><center> <p>El color es color <label id="lbResultado">Color</label> </p> </center> </div>
+</div>
+
+<button class="conten" onclick="cambiar()">encender</button>
+<button class="color" onclick="colorFunc()"> cambiar el de color </button>
+<div id="color">
+
+</div>
+
+
+
+
+
+<style>
+
+#divColor{
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color:white;
+}
+
+
+p{
+   background-color:black;
+    margin-left:10%;
+    margin-right:10%;
+    
+    
+}
+</style>
+
+
+
+
+
+
+
+
+
+<script>
+
+var color=false;
+
+function cambiar() {      
+    document.getElementById("divchangecolor").style.background="yellow";    
+
+    setTimeout(function(){
+      document.getElementById("divchangecolor").style.background=""; 
+    },2000);
+
+
+}
+
+function myNumber(maxNumber) {
+
+    var random_number = Math.random();
+    var random_integer = random_number * maxNumber;
+    var my_integer = Math.floor(random_integer);
+
+    return my_integer;
+}
+
+var color1=false;
+function colorFunc(){
+    color1 = !color1;
+    var color = 'rgb(' + myNumber(255) + ',' + myNumber(255) + ',' + myNumber(255) + ')';
+     document.getElementById('lbResultado').innerHTML = color;
+    document.getElementById("divchangecolor").style.background = color;
+    
+}
+</script>
