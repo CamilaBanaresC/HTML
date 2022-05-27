@@ -1,0 +1,53 @@
+<br>
+<br>
+<select id="paleta" onchange="myFunction(this.value)">
+    <option value="FFFFFF">FFFFFF</option>
+    <option value="6F8F00">6F8F00</option>
+    <option value="53AB00">53AB00</option>
+    <option value="37C700">37C700</option>
+    <option value="1BE300">1BE300</option>
+    <option value="00FF00" selected="selected">00FF00</option>
+    <option value="00DF1F">00DF1F</option>
+    <option value="00C33B">00C33B</option>
+    <option value="00A757">00A757</option>
+</select>
+<!--p><img id="myDIV" src="banio.png" alt="banio" width="580"></p-->
+<p>
+<div id="boxColor">
+ <center> <h1>El resultado seleccionado es</h1></center>
+ <h1><p><label id="lbResultado">Color</label>  </p></h1>
+</div>
+</p>
+
+<style>
+#lbResultado{
+    color: white;
+    margin-left:10%;
+    
+}
+
+</style>
+
+
+
+
+<style>
+
+#boxColor {
+	width: 300px;
+	height: 300px;
+}
+
+</style>
+
+
+<script>
+  function myFunction(color) {
+   document.getElementById('lbResultado').innerHTML = color;
+    document.getElementById("boxColor").style.backgroundColor = "#" + color;
+    
+}
+
+
+
+</script>
