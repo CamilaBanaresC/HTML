@@ -1,0 +1,56 @@
+<div id="botoness" >
+    <center>
+        <h1 id="counter-label">0</h1>
+    </center>
+</div>
+<center>
+    <div class="col-md-12">
+        <button id="click-diva">DEGRESE</button>
+        <button id="reset-button">RESETEAR</button>
+        <button id="click-div">INGRESE</button>
+    </div>
+</center>
+<style>
+</style>
+<script>
+    window.onload = function () {
+    
+        <#--- DECREMENTA VALOR -->
+        let clickDiva = document.getElementById("click-diva");
+        clickDiva.onclick = decrementClick;
+        
+        <#--- INCREMENTAR VALOR -->
+        let clickDiv = document.getElementById("click-div");
+        clickDiv.onclick = incrementClick;
+       
+        <#--- RESETEAMOS EL CONTADOR--->
+        let resetBtn = document.getElementById("reset-button");
+        resetBtn.onclick = resetCounter;
+    }
+    
+    var counterVal = 0;
+    
+    <#--- INCREMENTA EL CONTADOR--->
+    
+    incrementClick = function() {
+        updateDisplay(++counterVal);
+    }
+    
+    <#--- MOSTRAMOS EL MENSAJE POR PANTALLA--->
+    function updateDisplay(val) {
+        document.getElementById("counter-label").innerHTML = val;
+    }
+    
+    <#--- DECREMENTA EL CONTADOR--->
+    
+    decrementClick = function() {
+        updateDisplay(--counterVal);
+    }
+    
+    <#--- RESETEAMOS EL CONTADOR--->
+    function resetCounter() {
+        counterVal = 0;
+        updateDisplay(counterVal);
+    }
+    
+</script>
