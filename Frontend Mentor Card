@@ -1,0 +1,167 @@
+# HTML
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<div class="fondoimagen container">
+<main class="flex">
+<article class="card">
+	<img alt="${img1.getAttribute("alt")}" src="${img1.getData()}" class="card-header"/>
+	
+<div class="card-body">
+	<img alt="${Imgfoto.getAttribute("alt")}" src="${Imgfoto.getData()}" class="card-body-img" />
+	
+    <h1 class="card-body-title">
+    Victor charst
+    <span>26</span>
+    </h1>
+    <p class="card-body-text" >London</p>
+</div>
+    <div class="card-footer">
+        <div class="card-footer-social">
+             <h3>80k</h3>
+            <p>followers</p>
+        </div>
+          <div class="card-footer-social">
+             <h3>803k</h3>
+            <p>Likes</p>
+        </div>
+          <div class="card-footer-social">
+             <h3>1.4K</h3>
+            <p>photos</p>
+        </div>
+    </div>
+</article>
+</main>
+</div>
+
+<style>
+<#-- Estas serian las variables-->
+:root{
+   --dark-cyan: hsl(185, 75%, 39%); <#-- color-brillo-opacidad-->
+    --very-dark desaturated: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+
+
+
+<#-- Esta seria la fuente obtenida desde esta pagina https://fonts.google.com/specimen/Kumbh+Sans-->
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    
+    
+}
+
+<#-- Esto es para que todo lo que yo ingrese se aprete a los pixeles determinados-->
+html {
+  box-sizing: border-box
+  <#--- tamaño de fuente -->
+  font-size:16rem;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+<#-- Esto es para posicionar mi elemento en el centro-->
+
+.flex{
+    display:flex;
+    justify-content: center;
+    <#-- esto es para darle un alto al centro y que se camcule dependiendo del equipo-->
+
+    align-items:center;
+    height: 100vh;
+}
+
+<#-- Color de fondo blanco, ancho de 326px, bordes redondeados, desbordamiento oculto --->
+.card{
+
+  background-color white;
+  width:326px;
+  border-radius:16px;
+  overflow: hidden;
+  
+  <#-- box-shadow entrega la sobra 1° desplazamiento de x, 2°desplazamiento de y 3° desenfoque 4° color  se puede obtener en esta pagina https://rgbacolorpicker.com/--->
+
+  box-shadow:2px 2px 4px rgba(0,0,0,0.7);
+    
+    <#-- Con esto, mi imagen no se podra desbordar -->
+
+}
+
+
+.card-header{
+    width: 100%;
+    <#--Existen los  en el front, los de  linea y los de bloque, los elementos de linea siempre tendran un margen fantasma en su parte inferior ()asi los eliminamos display:block;)  -->
+    display:block;
+    
+}
+
+.card-body{
+        display:flex; <#-- posiciona los elementos uno al lado del otro -->
+        flex-direction: column; <#--- Alargamos al maximo el contenido -->
+        align-items: center; <#-- Posicionamos al centro -->
+        border-bottom:1px solid rgba(153,153,153,0.383);
+        
+    }
+
+.card-body-img{
+    border: 5px solid white; <#-- redondeado - tipo -- color -->
+    border-radius: 50%; 
+    margin-top: calc(-48px - 5px); <#-- Calculamos el tamaño de la imagen - el margen del border -->
+    background-color:white; 
+    
+}
+
+.card-title{
+    margin-top 2rem;
+    font-size: 1.8rem; 
+    
+}
+
+span{
+    color: var(--dark-gray);
+    font-weight: 400; <#-- delgades de la letra -->
+}
+
+.card-body-text{
+    color: var(--dark-gray);
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    
+}
+
+.card-footer{
+    display:flex;
+    <#-- Alineacion del footer, mas informacion en https://css-tricks.com/almanac/properties/j/justify-content/ --> 
+    justify-content: space-around;
+    
+}
+
+.card-footer-social{
+    text-align: center;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    
+}
+
+p{
+   letter-spacing: 1px;
+    
+}
+.fondoimagen{
+background-image: url("https://i.pinimg.com/550x/3f/01/44/3f0144b22286e89b32a3f47de163b671.jpg");
+	background-attachment: fixed;
+	  background-attachment: fixed;
+ 	 background-position: center center;
+  		background-size: cover;
+ 
+}
+
+
+
+</style>
